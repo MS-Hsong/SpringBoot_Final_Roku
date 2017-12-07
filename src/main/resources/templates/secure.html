@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <head th:replace="base :: headstuff"></head>
+</head>
+<body>
+     <nav th:replace="base :: navbar"></nav>
+     <div class="container">
+         <div class="jumbotron">
+             <h1>You have reached the secure page</h1>
+             <p>...</p>
+             <p><a class="btn btn-primary btn-lg"
+                   href="/" role="button">Go to Home</a>
+             </p>
+         </div>
+     </div>
+
+
+     <nav th:replace="base :: footer"></nav>
+     <th:block th:replace="base :: jslinks"></th:block>
+</body>
+</html>
